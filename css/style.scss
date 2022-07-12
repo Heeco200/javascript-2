@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #222;
+    transition: .3s;
+}
+
+.wrapper {
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    position: relative;
+    transition: .3s;
+}
+
+button {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container h1 {
+    margin-bottom: 100px;
+    color: #fff;
+    font-size: 100px;
+    font-family: sans-serif;
+    transition: .3s;
+}
+
+
+.container.active {
+    background-color: rgba(205, 205, 205);
+    transition: .3s;
+}
+
+.container.active h1 {
+    color: #000;
+    transition: .3s;
+}
+
+.container.active .wrapper {
+    background-color: greenyellow;
+    transition: .3s;
+}
+
+.container.active button {
+    left: 160px;
+    transition: .3s;
+}
